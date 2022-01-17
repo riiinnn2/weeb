@@ -1,89 +1,45 @@
-body{
-    margin: 0;
-    background: #031c20;
-    height: 850px;
-    font-family: 'Noto Serif', serif;
-}
-/*Header (Шапка сайта)*/
-.header{
-    width: 100%;
-    height: 100px;
-    background-color: #031c20;
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    z-index:1000;
-}
-/*To place navigation elements in a row*/
-.header_inner{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 170px;
-    margin-left: 150px;
-    height:100px;
-}
-.header_logo {
-    margin-left: -100px;
-    font-family: 'Noto Serif', serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: bisque;
-}
-/*Navigation*/
-.nav_link{
-    font-size: 25px;
-    font-family: 'Noto Serif', serif;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 10px;
-    color: bisque;
-    text-decoration: aliceblue;
-    /*Duration of the transition*/
-    transition: color 0.2s linear;
-}
-/*For a smooth color transition when the cursor is held up*/
-.nav_link:hover{
-    color: darkkhaki;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Noto+Serif&family=Roboto+Condensed:wght@300&family=The+Nautigal&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Movies</title>
+</head>
+<body>
+<header class="header">
+    <div class="header_inner">
+        <div class="header_logo">Pellicula</div>
+        <nav>
+            <a class="nav_link" href="index.html">Main</a>
+            <a class="nav_link" href="about_page.html">About</a>
+            <a class="nav_link" href="events.html">Events</a>
+            <a class="nav_link" href="movies.html">Movies</a>
+            <a class="nav_link" href="signup.html">Sign up</a>
+            <a class="nav_link" href="login_page.html">Login</a>
+        </nav>
+    </div>
+</header>
+<div class="next_container">
+    <h3 class="next_text">Harry Potter's universe</h3>
+</div>
+<div class="media_container">
+    <br>
+    <h2 style="font-size: 50px; text-align: center;">Harry Potter and the Prisoner of Azkaban</h2>
+    <video muted controls src="assets/images/Harry%20Potter%203.mp4"> </video>
+    <p class="clear"> </p>
+    <h3 style="text-align: center; font-size: 50px;">Harry Potter and the Goblet of Fire</h3>
+    <video muted controls src="assets/images/Harry%20Potter%204.mp4"> </video>
 
-.next_container{
-    background: url("../images/HP.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.next_text{
-    font-family: 'Luxurious Roman', cursive;
-    font-weight: 600;
-    font-size: 120px;
-    text-shadow: 2px 2px #000000;
-    text-transform: uppercase;
-    text-align: center;
-    color: #26818f;
-    font-style: inherit;
-}
-.media_container{
-    min-height: 200vh;
-    place-items: center;
-    background: linear-gradient(to top, rgb(114, 158, 189), rgb(48, 68, 79));
-}
-video{
-    align-items: center;
-    padding-left: 150px;
-    justify-content: space-between;
-}
-.rights{
-    background: #031c20;
-    align-items: center;
-    min-height: 5vh;
-}
-.copyright{
-    font-size:17px;
-    font-style:inherit;
-    font-weight:1;
-    color: grey;
-    text-align: center;
-}
+</div>
+<div class="rights">
+    <h6 class="copyright">
+        Copyright est.2021 &copy;Pellicula. Powered by Rosiettan Company. All Rights Reserved
+    </h6>
+</div>
+
+</body>
+</html>
